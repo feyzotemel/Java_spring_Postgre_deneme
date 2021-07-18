@@ -1,0 +1,23 @@
+db pass:30-120
+
+Installation Directory: C:\Program Files\PostgreSQL\13
+Server Installation Directory: C:\Program Files\PostgreSQL\13
+Data Directory: C:\Program Files\PostgreSQL\13\data
+Database Port: 5432
+Database Superuser: postgres
+Operating System Account: NT AUTHORITY\NetworkService
+Database Service: postgresql-x64-13
+Command Line Tools Installation Directory: C:\Program Files\PostgreSQL\13
+pgAdmin4 Installation Directory: C:\Program Files\PostgreSQL\13\pgAdmin 4
+Stack Builder Installation Directory: C:\Program Files\PostgreSQL\13
+
+///
+Application.properties e eklenecek postgre configrasyonu aşağıdaki gibi
+
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.show-sql=true
+spring.datasource.url=jdbc:postgresql://localhost:5432/Northwind
+spring.datasource.username=postgres
+spring.datasource.password=306090120
+spring.jpa.properties.javax.persistence.validation.mode = none
